@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light dark">
+  <title>Вакансии компании RotorsTech</title>
+  <meta name="description" content="RotorsTech — производитель роторных узлов и компрессорного оборудования. Откликнитесь на вакансии и присоединяйтесь к нашей команде.">
+  <style>
+    :root{
+      --bg:#ffffff;
+      --fg:#0f172a;
+      --muted:#475569;
+      --card:#f8fafc;
+      --line:#e2e8f0;
+      --accent:#0ea5e9;
+      --accent-contrast:#ffffff;
+      --shadow:0 1px 2px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.06);
+      --radius:16px;
+      --pad:20px;
+      --maxw:1100px;
+    }
+    @media (prefers-color-scheme:dark){
+      :root{
+        --bg:#0b1220;
+        --fg:#e5e7eb;
+        --muted:#94a3b8;
+        --card:#0f172a;
+        --line:#1f2937;
+        --accent:#38bdf8;
+        --accent-contrast:#061017;
+        --shadow:0 1px 2px rgba(0,0,0,.5),0 6px 14px rgba(0,0,0,.35);
+      }
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Inter,Ubuntu,"Noto Sans",Arial;
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.6;
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    [hidden]{display:none!important}
+    .container{max-width:var(--maxw);margin:0 auto;padding:clamp(16px,3vw,32px)}
+    header{border-bottom:1px solid var(--line);}
+    .brand{display:flex;align-items:center;gap:16px;}
+    .brand img{width:56px;height:56px;border-radius:12px;object-fit:contain;background:var(--card);border:1px solid var(--line);}
+    .intro{margin-top:12px;color:var(--muted);max-width:70ch;}
+    #jobs{padding-block:clamp(20px,4vw,40px);}
+    .jobs-grid{display:grid;grid-template-columns:1fr;gap:clamp(14px,2vw,22px);}
+    @media(min-width:700px){.jobs-grid{grid-template-columns:1fr 1fr;}}
+    @media(min-width:1040px){.jobs-grid{grid-template-columns:1fr 1fr 1fr;}}
+    .job-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:var(--pad);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;min-height:260px;}
+    .job-title{margin:0;font-size:1.1rem;}
+    .badge{display:inline-block;font-size:.8rem;padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);}
+    .meta{margin:0;padding:0;list-style:none;display:grid;gap:6px;}
+    .meta li{display:grid;grid-template-columns:110px 1fr;gap:10px;}
+    .label{color:var(--muted);}
+    .desc{margin:2px 0 8px 0;}
+    .contacts{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap;}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);font-weight:600;}
+    .btn:hover{transform:translateY(-1px);}
+    .btn-primary{background:var(--accent);color:var(--accent-contrast);}
+    footer{border-top:1px solid var(--line);padding-block:clamp(20px,4vw,40px);}
+    .footer-grid{display:grid;gap:16px;}
+    @media(min-width:780px){.footer-grid{grid-template-columns:1.5fr auto;}}
+    .small{font-size:.95rem;color:var(--muted);}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container brand">
+      <img src="https://example.com/logo.png" alt="Логотип RotorsTech">
+      <div>
+        <h1>Вакансии компании RotorsTech</h1>
+        <p class="intro">
+          RotorsTech специализируется на производстве роторных узлов, компрессорного оборудования и инженерных услуг.
+          Мы создаём инженерные решения будущего и ищем специалистов, готовых развиваться вместе с нами.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="jobs">
+      <div class="container">
+        <h2 style="margin-bottom:14px;">Открытые позиции</h2>
+        <div class="jobs-grid">
+
+          <!-- ✅ Вакансия 1 -->
+          <article class="job-card">
+            <h3 class="job-title">Инженер по турбинам</h3>
+            <span class="badge">Полная занятость</span>
+            <p class="desc">Поиск специалиста с опытом работы в Украине в области проектирования, оптимизации и обслуживания турбинных установок. Знание современных инженерных решений, умение работать с CAD и анализировать производственные процессы.</p>
+            <ul class="meta">
+              <li><span class="label">Оклад:</span>1700 € NETTO / месяц</li>
+              <li><span class="label">График:</span>Пн–Пт, 09:00 – 17:30</li>
+              <li><span class="label">Локация:</span>Братислава, Словакия</li>
+              <li><span class="label">Языки:</span>Русский — C1, Английский — B1</li>
+              <li><span class="label">Контакты:</span><a href="mailto:work@rotors.tech">work@rotors.tech</a>, <a href="tel:+421948625907">+421&nbsp;948&nbsp;625&nbsp;907</a></li>
+            </ul>
+            <div class="contacts">
+              <a class="btn btn-primary" href="mailto:work@rotors.tech?subject=Отклик: Инженер по турбинам">Отправить резюме</a>
+            </div>
+          </article>
+
+          <!-- ✅ Вакансия 2 -->
+          <article class="job-card">
+            <h3 class="job-title">Юрист (Legal Advisor)</h3>
+            <span class="badge">Полная занятость</span>
+            <p class="desc">Ведение юридических вопросов, связанных с хозяйственной деятельностью компании. Подготовка договоров, взаимодействие с госорганами, контроль за соблюдением законодательства.</p>
+            <ul class="meta">
+              <li><span class="label">Оклад:</span>1800 € NETTO / месяц</li>
+              <li><span class="label">График:</span>Пн–Пт, 09:00 – 17:30</li>
+              <li><span class="label">Локация:</span>Братислава, Словакия</li>
+              <li><span class="label">Языки:</span>Словацкий — C1, Английский — B2</li>
+              <li><span class="label">Контакты:</span><a href="mailto:work@rotors.tech">work@rotors.tech</a>, <a href="tel:+421948625907">+421&nbsp;948&nbsp;625&nbsp;907</a></li>
+            </ul>
+            <div class="contacts">
+              <a class="btn btn-primary" href="mailto:work@rotors.tech?subject=Отклик: Legal Advisor">Отправить резюме</a>
+            </div>
+          </article>
+
+          <!-- 🔹 ШАБЛОН ДЛЯ НОВОЙ ВАКАНСИИ
+               Чтобы добавить новую вакансию:
+               1️⃣ Скопируй этот блок и вставь ниже.
+               2️⃣ Удали hidden, заполни текст.
+          -->
+          <article class="job-card" hidden>
+            <h3 class="job-title">Название вакансии</h3>
+            <span class="badge">Полная занятость</span>
+            <p class="desc">Описание вакансии: обязанности, требования, опыт, навыки...</p>
+            <ul class="meta">
+              <li><span class="label">Оклад:</span>____ € NETTO / месяц</li>
+              <li><span class="label">График:</span>____</li>
+              <li><span class="label">Локация:</span>____</li>
+              <li><span class="label">Языки:</span>____</li>
+              <li><span class="label">Контакты:</span><a href="mailto:work@rotors.tech">work@rotors.tech</a>, <a href="tel:+421948625907">+421&nbsp;948&nbsp;625&nbsp;907</a></li>
+            </ul>
+            <div class="contacts">
+              <a class="btn btn-primary" href="mailto:work@rotors.tech?subject=Отклик: Новая вакансия">Отправить резюме</a>
+            </div>
+          </article>
+          <!-- КОНЕЦ ШАБЛОНОВ -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h2>Отправить резюме</h2>
+        <p class="small">Вы можете откликнуться по e-mail или позвонить нам. Мы отвечаем в рабочие часы (Пн–Пт, 09:00–17:30 CET).</p>
+      </div>
+      <div>
+        <a class="btn btn-primary" href="mailto:work@rotors.tech">Написать на work@rotors.tech</a>
+        <a class="btn" href="tel:+421948625907">Позвонить: +421&nbsp;948&nbsp;625&nbsp;907</a>
+      </div>
+    </div>
+    <div class="container" style="margin-top:10px;">
+      <p class="small">© 2025 RotorsTech. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>
