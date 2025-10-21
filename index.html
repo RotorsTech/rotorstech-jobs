@@ -46,7 +46,18 @@
     .container{max-width:var(--maxw);margin:0 auto;padding:clamp(16px,3vw,32px)}
     header{border-bottom:1px solid var(--line);}
     .brand{display:flex;align-items:center;gap:16px;}
-    .brand img{width:56px;height:56px;border-radius:12px;object-fit:contain;background:var(--card);border:1px solid var(--line);}
+    .brand img{
+  height: 90px;       /* размер логотипа на десктопе */
+  width: auto;
+  background: transparent; /* убрать белый фон-квадрат */
+  border: none;            /* убрать рамку */
+  border-radius: 0;        /* убрать скругление */
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 640px){
+  .brand img{ height: 70px; }  /* поменьше на телефонах */
+}
     .intro{margin-top:12px;color:var(--muted);max-width:70ch;}
     #jobs{padding-block:clamp(20px,4vw,40px);}
     .jobs-grid{display:grid;grid-template-columns:1fr;gap:clamp(14px,2vw,22px);}
@@ -167,5 +178,6 @@
   </footer>
 </body>
 </html>
+
 
 
